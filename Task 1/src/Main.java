@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int toadEyesCount = 0;          //Жабьи глаза
-        int ghoulTearsCount = 0;        //Слезы вурдалака
-        int ravenBonesCount = 0;        //Кости ворона
-        int dumplingsCount = 0;         //Пельмени(а почему, собственно нет? xD )
+       // int toadEyesCount = 0;          //Жабьи глаза
+       // int ghoulTearsCount = 0;        //Слезы вурдалака
+       // int ravenBonesCount = 0;        //Кости ворона
+       // int dumplingsCount = 0;         //Пельмени(а почему, собственно нет? xD )
 
         //todo реализовать ввод пользователем кол-ва ингредиентов.
 
@@ -14,5 +16,25 @@ public class Main {
         // 4. 5 слез вурдалака + 10 пельменей + 4 жабьих глаза + 3 кости ворона - Запретный эликсир
 
         //todo дописать логику программы сюда
+        System.out.println("Введите количество жабьих глаз");
+        int toadEyesCount = new Scanner(System.in).nextInt();
+
+        System.out.println("Введите количество слез вурдалака");
+        int ghoulTearsCount = new Scanner(System.in).nextInt();
+
+        System.out.println("Введите количество костей вороны");
+        int ravenBonesCount = new Scanner(System.in).nextInt();
+
+        System.out.println("Введите количество костей пельменей");
+        int dumplingsCount = new Scanner(System.in).nextInt();
+
+        if (toadEyesCount == 3 && ravenBonesCount == 1){
+            System.out.println("Эликсир зоркости");
+        }
+
+        System.out.println(toadEyesCount);
+        System.out.println(ghoulTearsCount);
+        System.out.println(ravenBonesCount);
+        System.out.println(dumplingsCount);
     }
 }
