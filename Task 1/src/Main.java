@@ -29,12 +29,24 @@ public class Main {
         int dumplingsCount = new Scanner(System.in).nextInt();
 
         if (toadEyesCount == 3 && ravenBonesCount == 1){
-            System.out.println("Эликсир зоркости");
+            System.out.println("Вы можете приготовит Эликсир зоркости");
+        }
+        if(ravenBonesCount == 2 && dumplingsCount == 4){
+            System.out.println("Вы можете приготовит Эликсир стойкости");
+        }
+        if(ghoulTearsCount == 7 && dumplingsCount == 1 && toadEyesCount == 2){
+            System.out.println("Вы можете приготовит Эликсир скрытности");
+        }
+        if(ghoulTearsCount == 5 && dumplingsCount == 10 && toadEyesCount == 4 && ravenBonesCount == 3){
+            System.out.println("Вы можете приготовит Запретный элексир");
+        }
+        else {
+            System.out.println("У вас не хватает ингридиентов, чтобы приготовить элексир");
         }
 
-        System.out.println(toadEyesCount);
+        /*System.out.println(toadEyesCount);
         System.out.println(ghoulTearsCount);
         System.out.println(ravenBonesCount);
-        System.out.println(dumplingsCount);
+        System.out.println(dumplingsCount);*/
     }
 }
