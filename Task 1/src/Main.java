@@ -41,6 +41,8 @@ public class Main {
             }
             if (ghoulTearsCount == 5 && dumplingsCount == 10 && toadEyesCount == 4 && ravenBonesCount == 3) {
                 System.out.println("Вы можете приготовит Запретный элексир");
+            } else {
+                System.out.println("У вас недостаточное количество ингридиентов");
             }
 
 
