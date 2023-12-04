@@ -16,7 +16,37 @@ public class Main {
         // 4. 5 слез вурдалака + 10 пельменей + 4 жабьих глаза + 3 кости ворона - Запретный эликсир
 
         //todo дописать логику программы сюда
-        System.out.println("Введите количество жабьих глаз");
+        boolean isContinue = true;
+        while (isContinue) {
+            System.out.println("Введите количество жабьих глаз");
+            int toadEyesCount = new Scanner(System.in).nextInt();
+
+            System.out.println("Введите количество слез вурдалака");
+            int ghoulTearsCount = new Scanner(System.in).nextInt();
+
+            System.out.println("Введите количество костей вороны");
+            int ravenBonesCount = new Scanner(System.in).nextInt();
+
+            System.out.println("Введите количество 3пельменей");
+            int dumplingsCount = new Scanner(System.in).nextInt();
+
+            if (toadEyesCount == 3 && ravenBonesCount == 1) {
+                System.out.println("Вы можете приготовит Эликсир зоркости");
+            }
+            if (ravenBonesCount == 2 && dumplingsCount == 4) {
+                System.out.println("Вы можете приготовит Эликсир стойкости");
+            }
+            if (ghoulTearsCount == 7 && dumplingsCount == 1 && toadEyesCount == 2) {
+                System.out.println("Вы можете приготовит Эликсир скрытности");
+            }
+            if (ghoulTearsCount == 5 && dumplingsCount == 10 && toadEyesCount == 4 && ravenBonesCount == 3) {
+                System.out.println("Вы можете приготовит Запретный элексир");
+            }
+
+
+
+
+       /* System.out.println("Введите количество жабьих глаз");
         int toadEyesCount = new Scanner(System.in).nextInt();
 
         System.out.println("Введите количество слез вурдалака");
@@ -43,10 +73,11 @@ public class Main {
         else {
             System.out.println("У вас не хватает ингридиентов, чтобы приготовить элексир");
         }
-
+*/
         /*System.out.println(toadEyesCount);
         System.out.println(ghoulTearsCount);
         System.out.println(ravenBonesCount);
         System.out.println(dumplingsCount);*/
+        }
     }
 }
