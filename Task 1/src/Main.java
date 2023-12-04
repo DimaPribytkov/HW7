@@ -16,8 +16,8 @@ public class Main {
         // 3. 7 слез вурдалака + 1 пельмень + 2 жабьих глаза - Эликсир скрытности
         // 4. 5 слез вурдалака + 10 пельменей + 4 жабьих глаза + 3 кости ворона - Запретный эликсир
 
-        boolean isCanCook = false;
-        while (!isCanCook) {
+        boolean isCanCook = true;
+        while (isCanCook) {
             System.out.println("Введите количество жабьих глаз");
             toadEyesCount = new Scanner(System.in).nextInt();
 
@@ -32,20 +32,17 @@ public class Main {
 
             if (toadEyesCount >= 3 && ravenBonesCount >= 1) {
                 System.out.println("Вы можете приготовить Эликсир зоркости");
-                isCanCook = true;
-            }
+                            }
             if (ravenBonesCount >= 2 && dumplingsCount >= 4) {
                 System.out.println("Вы можете приготовить Эликсир стойкости");
-                isCanCook = true;
-            }
+                           }
             if (ghoulTearsCount >= 7 && dumplingsCount >= 1 && toadEyesCount >= 2) {
                 System.out.println("Вы можете приготовить Эликсир скрытности");
-                isCanCook = true;
-            }
+                            }
             if (ghoulTearsCount >= 5 && dumplingsCount >= 10 && toadEyesCount >= 4 && ravenBonesCount >= 3) {
                 System.out.println("Вы можете приготовить Запретный эликсир");
-                isCanCook = true;
-            } else if (!isCanCook) {
+            }
+            if (!isCanCook) {
                 System.out.println("Вы не можете приготовить ни один эликсир");
             }
 

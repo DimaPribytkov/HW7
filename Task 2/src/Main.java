@@ -9,12 +9,10 @@ public class Main {
     …*/
 
         //todo Тут увольняем айтишников
-        for (int i=2; i<=100; i++){
-            if (i==0 || i==1){
-                continue;
-            }
+        for (int i=2; i<=100; i = i+2){
             System.out.println("Уволен айтишник с id " + i);
-            i++;
+            }
+
         }
     }
-}
+
