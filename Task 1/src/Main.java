@@ -17,7 +17,7 @@ public class Main {
 
         //todo дописать логику программы сюда
         boolean isContinue = true;
-        while (isContinue) {
+        while (isContinue == true) {
             System.out.println("Введите количество жабьих глаз");
             int toadEyesCount = new Scanner(System.in).nextInt();
 
